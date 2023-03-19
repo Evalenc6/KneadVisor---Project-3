@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_brown"
+
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/catImage"
+        android:layout_width="310dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/kneadingcat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/privacy_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Your kneads matter!"
+        android:textStyle="bold"
+        android:textColor="@color/light_blue"
+        android:textSize="25sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/catImage" />
+
+    <TextView
+        android:id="@+id/info_1"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:text="Your info is only used to give you personalized kneading advice."
+        android:textStyle="bold"
+        android:textColor="@color/light_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/privacy_text"
+        />
+
+    <TextView
+        android:id="@+id/info_2"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="We never share your personal data to other cats or humans."
+        android:textStyle="bold"
+        android:textColor="@color/light_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/info_1"
+        />
+
+    <TextView
+        android:id="@+id/info_3"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Your kneading behaviors stays between us."
+        android:textStyle="bold"
+        android:textColor="@color/light_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/info_2" />
+
+    <TextView
+        android:id="@+id/Privacy"
+        android:layout_width="97dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="28dp"
+        android:clickable="true"
+        android:text="Privacy Policy"
+        android:textColor="@color/light_green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/info_3" />
+
+    <TextView
+        android:id="@+id/Terms"
+        android:layout_width="97dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="28dp"
+        android:clickable="true"
+        android:text="Terms"
+        android:textColor="@color/light_green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toStartOf="@id/Privacy"
+        app:layout_constraintTop_toBottomOf="@id/info_3" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="36dp"
+
+        android:layout_height="38dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="65dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Privacy" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="213dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="96dp"
+        android:text="I have read and agree to the terms  conditions, and the privacy policy"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/checkBox"
+        app:layout_constraintTop_toTopOf="@+id/Privacy" />
+
+    <Button
+        android:layout_width="244dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/buttonshape"
+        android:text="Apply"
+        android:textAlignment="center"
+        android:textSize="30sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -43,7 +43,7 @@ I have chosen to duplicate the following layout from the **Foodvisor** app:
 
 Here's a video / GIF that demos all of the app's implemented features:
 
-<img src='http://i.imgur.com/KKPGcQY.gif' title='Video Demo' width='' alt='Video Demo' />
+<img src='http://i.imgur.com/Pq472n3.gif' title='Video Demo' width=''/>
 
 GIF created with **ScreenToGif**
 
